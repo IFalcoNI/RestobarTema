@@ -336,7 +336,7 @@ header a {
   border-radius: 37px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: center;
   align-items: center;
   border: 3px solid rgba(99, 99, 99, 1);
   margin: 20px 40px;
@@ -841,5 +841,23 @@ footer h2 {
     width: 480px;
     height: 420px;
     margin: 60px 70px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .ChooseMeal {
+    width: 300px;
+    height: 80px;
+    /* margin: 20px 40px; */
+    padding: 0 10%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ChooseMeal > img {
+    width: 60px;
+    height: 60px;
+  }
+  .ChooseMeal > p {
+    margin: 0 10px;
   }
 }
