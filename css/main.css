@@ -11,7 +11,8 @@ body {
 .MainPage {
   width: 100%;
   height: 100vh;
-
+position: relative;
+top: -149px;
   background-image: url("../img/mainimg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,6 +23,8 @@ body {
   width: 100%;
   height: 100vh;
   min-height: 650px;
+  position: relative;
+top: -149px;
   background: linear-gradient(
     269.43deg,
     #fbfbfb -19.98%,
@@ -30,6 +33,8 @@ body {
   );
 }
 .AboutUsBackground {
+  position: relative;
+top: -149px;
   width: 100%;
   height: 100vh;
   /* min-width: 900px; */
@@ -65,7 +70,7 @@ li {
   position: relative;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgba(39, 38, 38, 0.95);
+  background-color: rgba(39, 38, 38, 0.6);
   width: 284px;
   height: 100%;
   margin-left: 10%;
@@ -239,8 +244,11 @@ li {
   margin-top: 57px;
   width: calc(10% + 284px);
   height: 92px;
-  background-color: rgba(55, 54, 54, 1);
+  background-color: rgba(39, 38, 38, 0.95);
   z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .header {
   display: flex;
@@ -249,13 +257,15 @@ li {
   width: calc(100% - (10% + 283px));
   /* width: 100%; */
   height: 92px;
-  background-color: rgba(55, 54, 54, 1);
+  background-color: rgba(39, 38, 38, 0.95);
   position: sticky;
   /* position: fixed; */
   top: 0;
+  left: calc(10% + 283px);
   right: 0;
   margin-top: 57px;
   z-index: 1000;
+  border-bottom: 1px solid rgba(180, 131, 95, 1);
 }
 header a {
   color: #c7c8bb;
@@ -673,6 +683,9 @@ footer h2 {
     width: 100%;
   }
   .leftHeader {
+    display: none;
+  }
+  .logo{
     display: none;
   }
 }
