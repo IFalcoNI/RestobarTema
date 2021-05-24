@@ -228,7 +228,7 @@ li {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  height: 300vh;
+  height: 400vh;
   width: 100%;
   position: absolute;
 }
@@ -251,10 +251,11 @@ li {
   height: 92px;
   background-color: rgba(55, 54, 54, 1);
   position: sticky;
+  /* position: fixed; */
   top: 0;
   right: 0;
   margin-top: 57px;
-  z-index: 100;
+  z-index: 1000;
 }
 header a {
   color: #c7c8bb;
